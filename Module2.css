@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2c3e50; /* Dark Blue */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-img {
+    width: 100%; /* Ensure the logo takes up the full width of its container */
+    max-width: 150px; /* Set a max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF; /* Blue background */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button.nav-button {
+    border: none;
+    outline: none;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #ecf0f1; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Registration Form */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff; /* White background for form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Centering and controlling the width of the form */
+    margin: 0 auto; /* Center align */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.registration-form label {
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue */
+}
+
+.registration-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #2c3e50;
+    background-color: #ecf0f1; /* Light gray */
+}
+
+.registration-form input:focus {
+    outline: none;
+    border-color: #3498db; /* Blue focus border */
+}
+
+/* Form Buttons */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.small-button {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db; /* Blue */
+    color: #fff; /* White text */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.small-button:hover {
+    background-color: #1abc9c; /* Aqua green hover */
+}
+
+/* Add Money and Redeem Buttons */
+.add-money, .redeem {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.add-money:hover, .redeem:hover {
+    background-color: #1abc9c; /* Aqua Green Hover */
+}
+
+/* QR Code Section */
+.qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.qr-section{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the smaller QR code */
+    width: fit-content; /* Adjust to content size */
+    margin: 0 auto; /* Center the section on the page */
+
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Layout for QR Code and Buttons */
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Student Card Upload Section */
+.registration-form input[type="file"] {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ecf0f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-form input[type="file"]:focus {
+    border-color: #3498db; /* Blue focus border */
+}
+
+/* Point Information Section */
+.point-information {
+    margin-top: 20px;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #7f8c8d; /* Grayish border */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db; /* Blue header */
+    color: #fff; /* White text */
+}
+
+td {
+    background-color: #ecf0f1; /* Light gray */
+}
+
+.history-text {
+    font-style: italic;
+    text-align: left;
+    color: #7f8c8d; /* Subtle gray */
+}
+
+/* Printing Statistics */
+.printing-stats {
+    margin-top: 40px;
+    background-color: #fff; /* White background */
+    padding: 15px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Smaller font size */
+}
+
+.printing-stats h2 {
+    font-size: 18px; /* Slightly smaller header */
+    margin-bottom: 10px;
+}
+
+.printing-stats p {
+    font-size: 14px; /* Smaller text for statistics */
+}
+
+canvas {
+    width: 80% !important; /* Reduced width of the chart */
+    height: 200px !important; /* Reduced height of the chart */
+    margin-top: 20px;
+}

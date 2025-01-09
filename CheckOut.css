@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+}
+
+/* Layout for the Menu */
+.menu {
+    width: 20%;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #2c3e50;
+}
+
+/* Checkout Page */
+.checkout-page {
+    margin-left: 30%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+}
+
+.checkout-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.points-available {
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.payment-options {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.payment-options label {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.checkout-actions {
+    text-align: center;
+}
+
+.checkout-actions .cancel-btn,
+.checkout-actions .checkout-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.checkout-actions .cancel-btn:hover {
+    background-color: #2980b9;
+}
+
+.checkout-actions .checkout-btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Cash Checkout Page */
+.cash-checkout,
+.membership-checkout,
+.insufficient-points {
+    display: none;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cash-checkout h2,
+.membership-checkout h2,
+.insufficient-points h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pay-btn,
+.cancel-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pay-btn:hover {
+    background-color: #2ecc71;
+}
+
+.cancel-btn:hover {
+    background-color: #e74c3c;
+}

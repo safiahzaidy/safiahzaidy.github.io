@@ -1,0 +1,58 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<?php
+if (isset($_SESSION['ERRMSG_ARR'])) {
+    echo "<h1 style='color: red'>Error found: ";
+    foreach ($_SESSION['ERRMSG_ARR'] as $error) {
+        echo htmlspecialchars($error) . "! ";
+    }
+    echo "</h1>";
+    unset($_SESSION['ERRMSG_ARR']);
+}
+?>
+    <div class="login-page"><form method="post" action="M1_sessionHandler.php">
+        <div class="logo">
+            <img src="images/logoUMPSA.png" alt="LogoUMPSA" width="132.0" height="99.0" style="padding-right: 5px;">
+            <img src="images/logo.png" alt="LogoRapidPrint" width="256.9" height="57.4" style="padding: 20px 0px 20px 20px;"> 
+        </div>
+
+        <div class="login-details">
+            <div class="input-field">
+                <label style="padding-left: 5px;">Username</label>
+                <input type="text" name="username" placeholder="Enter your username">
+            </div>
+            <div class="input-field">
+                <label style="padding-left: 5px;">Password</label>
+                <input type="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="input-field">
+                <label style="padding-left: 5px;">Role</label>
+                <select id="role">
+                    <option value="">Select Role</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Customer">Customer</option>
+                </select>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="buttons">
+                <button type="submit">Login</button>
+            </div>
+			<div class="guest-button">
+                    <!-- Guest button/link -->
+                    <a href="guest.php" class="guest-link">Continue as Guest</a>
+            </div>
+        </div>
+    </div></form>
+</body>
+</html>
